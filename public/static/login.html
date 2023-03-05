@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Registration</title>
+</head>
+<body>
+    <!-- component -->
+<form id="reg-form">
+<div class="min-h-screen bg-black flex justify-center items-center">
+	
+	<div class="py-12 px-12 bg-white rounded-2xl shadow-xl z-20">
+		<div>
+			<h1 class="text-3xl font-bold text-center mb-4 cursor-pointer">Create An Account</h1>
+		</div>
+		<div class="space-y-4">
+			<input type="text" autocomplete="off" id="username" placeholder="Username" class="block text-sm py-3 px-4 rounded-lg w-full border outline-none" />
+			<input type="text" autocomplete="off" id="password" placeholder="Password" class="block text-sm py-3 px-4 rounded-lg w-full border outline-none" />
+    </div>
+			<div class="text-center mt-6">
+                <input type="submit" value="Submit" />
+				<!--<button class="py-3 w-64 text-xl text-white bg-black rounded-2xl">Create Account</button>-->
+			</div>
+		</div>
+	</div>
+</form>
+    <script>
+        const form = document.getElementById('reg-form')
+        form.addEventListener('submit', registerUser)
+
+        async function registerUser(event) {
+            event.preventDefault()
+            const username = document.getElementById('username').value
+            const password = document.getElementById('password').value
+            const like = 1
+
+            const result = await fetch('/api/register', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify({
+                    username,
+                    password,
+                    like
+                })
+            }).then((res) => res.json())
+
+            if (result.status === 'ok') {
+                // everythign went fine
+                alert('Success')
+                return location.href="index.html"
+            } else {
+                alert(result.error)
+            }
+        }
+    </script>
+    
+</body>
+</html>

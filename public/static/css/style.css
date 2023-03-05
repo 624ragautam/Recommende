@@ -1,0 +1,198 @@
+*
+.container {
+  color:black;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.featured-content {
+  height: 50vh;
+  padding: 50px
+}
+.movie-list-wrapper {
+  position: relative;
+  overflow: hidden;
+}
+.movie-list-item {
+  margin-right: 30px;
+  position: relative;
+}
+
+.swiper-slide:hover .movie-list-item-title{
+  opacity: 1;
+}
+.swiper-slide:hover .movie-list-item-img{
+  filter: blur(8px);
+}
+.movie-list-item-img {
+  transition: all 1s ease-in-out;
+  width: 280px;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 10px;
+  opacity: 1;
+}
+
+.movie-list-item-title {
+  color: whitesmoke;
+  height: 60px;
+  margin-top: 30px;
+  font-size: 22px;
+  font-weight: bold;
+  position: absolute;
+  bottom: 5%;
+  right: 2%;
+  left: 2%;
+  opacity: 0;
+  transition: 1s all ease-in-out;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+  height: 180px;
+  width:250px;
+  /* Center slide text vertically */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  border-radius: 10px;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+}
+.swiper-slide:hover{
+  transform: scale(1.08);
+  border-radius: 10px;
+  transition: all 1s ease-in-out;
+  height: 180px;
+}
+
+@media only screen and (max-width: 940px){
+    .menu-container{
+        display: none;
+    }
+}
+
+
+@media (max-width:900px)
+{
+  .movie-list-item-img
+  {
+  transition: all 1s ease-in-out;
+  width: 150px;
+  height: 140px;
+  object-fit: cover;
+  border-radius: 10px;
+  opacity: 1;
+  }
+  .swiper-slide{
+    text-align: center;
+          font-size: 10px;
+          background: #fff;
+          height: 140px;
+          width:150px;
+          /* Center slide text vertically */
+          display: -webkit-box;
+          display: -ms-flexbox;
+          display: -webkit-flex;
+          display: flex;
+          border-radius: 10px;
+          -webkit-box-pack: center;
+          -ms-flex-pack: center;
+          -webkit-justify-content: center;
+          justify-content: center;
+          -webkit-box-align: center;
+          -ms-flex-align: center;
+          -webkit-align-items: center;
+          align-items: center;
+  }
+  .swiper-slide:hover{
+    transform: scale(1.08);
+    border-radius: 10px;
+    transition: all 1s ease-in-out;
+    height: 140px;
+  }
+  .movie-list-item-title {
+    color: whitesmoke;
+    margin-top: 30px;
+    font-size: 20px;
+    font-weight: bold;
+    position: absolute;
+    bottom: 5%;
+    right: 2%;
+    left: 2%;
+    opacity: 0;
+    transition: 1s all ease-in-out;
+  }
+  .movie-list-title
+  {
+  margin-bottom: 10px;margin-top:6px;font-size:30px;margin-left: 15px;color: white;font-weight: 1000;
+  }
+}
+
+@media (max-width:430px)
+{
+  .movie-list-item-img
+  {
+  transition: all 1s ease-in-out;
+  width: 120px;
+  height: 140px;
+  object-fit: cover;
+  border-radius: 10px;
+  opacity: 1;
+  }
+  .swiper-slide{
+    text-align: center;
+          font-size: 10px;
+          background: #fff;
+          height: 140px;
+          width:120px;
+          /* Center slide text vertically */
+          display: -webkit-box;
+          display: -ms-flexbox;
+          display: -webkit-flex;
+          display: flex;
+          border-radius: 10px;
+          -webkit-box-pack: center;
+          -ms-flex-pack: center;
+          -webkit-justify-content: center;
+          justify-content: center;
+          -webkit-box-align: center;
+          -ms-flex-align: center;
+          -webkit-align-items: center;
+          align-items: center;
+  }
+  .swiper-slide:hover{
+    transform: scale(1.08);
+    border-radius: 10px;
+    transition: all 1s ease-in-out;
+    height: 140px;
+  }
+  .movie-list-item-title {
+    color: whitesmoke;
+    margin-top: 30px;
+    font-size: 15px;
+    font-weight: bold;
+    position: absolute;
+    bottom: 5%;
+    right: 2%;
+    left: 2%;
+    opacity: 0;
+    transition: 1s all ease-in-out;
+  }
+  .movie-list-title
+  {
+  margin-bottom: 10px;margin-top:6px;font-size:20px;margin-left: 15px;color: white;font-weight: 1000;
+  }
+}
+
+
+

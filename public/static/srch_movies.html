@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/display.css">
+  <link rel="stylesheet" href="css/homepage.css"/>
+  <script src="js/banner_m.js"></script>
+  <link rel="stylesheet" href="css/search.css">
+  <link rel="stylesheet" href="css/searchinfo.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.1/css/all.css" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/style.css">
+  <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&family=Sen:wght@400;700;800&display=swap"
+      rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
+  <link href="http://fonts.googleapis.com/css?family=Cookie" rel="stylesheet" type="text/css">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://unpkg.com/flowbite@1.5.1/dist/flowbite.min.css" />
+     <!-- Link Swiper's CSS -->
+     <link
+     rel="stylesheet"
+     href="https://unpkg.com/swiper/swiper-bundle.min.css"
+   />
+      <!-- Demo styles -->
+      <style>
+        html,
+        body {
+          position: relative;
+          height: 100%;
+          background: #1C1C1C;
+          font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+          font-size: 14px;
+          color: #000;
+          margin: 0;
+          padding: 0;
+        }
+  
+        .swiper {
+          width: 100%;
+          
+        }
+  
+        
+        </style>
+</head>
+
+<body>
+    
+    <div class="main">
+      <nav class="bg-white border-gray-200 px-2 sm:px-4 py-2.5 rounded dark:bg-gray-900">
+        <div class="container flex flex-wrap justify-between items-center mx-auto">
+          <a href="#" class="flex items-center">
+            <img src="https://png.pngtree.com/element_our/20190601/ourlarge/pngtree-white-movie-icon-image_1344876.jpg" class="mr-3 h-6 sm:h-10" alt="Flowbite Logo" />
+        </a>
+        <div class="flex md:order-2" >
+          <button type="button" data-collapse-toggle="navbar-search" aria-controls="navbar-search" aria-expanded="false" class="md:hidden text-gray-500 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-700 focus:outline-none focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-700 rounded-lg text-sm p-2.5 mr-1">
+            <svg class="w-5 h-5" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M8 4a4 4 0 100 8 4 4 0 000-8zM2 8a6 6 0 1110.89 3.476l4.817 4.817a1 1 0 01-1.414 1.414l-4.816-4.816A6 6 0 012 8z" clip-rule="evenodd"></path></svg>
+            <span class="sr-only">Search</span>
+          </button>
+          <div class="hidden relative md:block">
+            <div class="flex absolute inset-y-0 left-0 items-center pl-3 pointer-events-none">
+              <svg class="w-5 h-5 text-gray-500" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M8 4a4 4 0 100 8 4 4 0 000-8zM2 8a6 6 0 1110.89 3.476l4.817 4.817a1 1 0 01-1.414 1.414l-4.816-4.816A6 6 0 012 8z" clip-rule="evenodd"></path></svg>
+              <span class="sr-only">Search icon</span>
+            </div>
+            <input type="text" id="mytext" name="fname" class="block p-2 pl-20 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="Search..." required="">
+          </div>
+          <button data-collapse-toggle="navbar-search" type="button" class="inline-flex items-center p-2 text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600" aria-controls="navbar-search" aria-expanded="false">
+            <span class="sr-only">Open menu</span>
+            <svg class="w-6 h-6" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z" clip-rule="evenodd"></path></svg>
+          </button>
+        </div>
+        <div class="flex items-center md:order-2">
+      <button type="button" class="flex mr-3 text-sm bg-gray-800 rounded-full md:mr-0 focus:ring-4 focus:ring-gray-300 dark:focus:ring-gray-600" id="user-menu-button" aria-expanded="false" data-dropdown-toggle="user-dropdown" data-dropdown-placement="bottom">
+        <span class="sr-only">Open user menu</span>
+        <img class="w-8 h-8 rounded-full" src="userprofile.png" alt="user photo">
+      </button>
+      <!-- Dropdown menu -->
+      <div class="hidden z-50 my-4 text-base list-none bg-white rounded divide-y divide-gray-100 shadow dark:bg-gray-700 dark:divide-gray-600" id="user-dropdown">
+        <ul class="py-1" aria-labelledby="user-menu-button">
+          <li>
+            <a href="index.html" class="block py-2 px-4 text-sm text-gray-700 hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-gray-200 dark:hover:text-white">Sign out</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    
+          <div class="hidden justify-between items-center w-full md:flex md:w-auto md:order-1" id="navbar-search">
+            <div class="relative mt-3 md:hidden">
+              <div class="flex absolute inset-y-0 left-0 items-center pl-3 pointer-events-none">
+                <svg class="w-5 h-5 text-gray-500" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M8 4a4 4 0 100 8 4 4 0 000-8zM2 8a6 6 0 1110.89 3.476l4.817 4.817a1 1 0 01-1.414 1.414l-4.816-4.816A6 6 0 012 8z" clip-rule="evenodd"></path></svg>
+              </div>
+              <input type="text" id="search-navbar" class="block p-2 pl-10 w-full text-gray-900 bg-gray-50 rounded-lg border border-gray-300 sm:text-sm focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="Search...">
+            </div>
+            <ul class="flex flex-col mt-4 md:flex-row md:space-x-8 md:mt-0 md:text-sm md:font-medium">
+              <li>
+                <a href="srch_movies.html" class="block py-3 pr-4 pl-3 text-white bg-blue-700 rounded md:bg-transparent md:text-blue-700 md:p-0 dark:text-white" aria-current="page">Movies</a>
+              </li>
+              <li>
+                <a href="srch_series.html" class="block py-3 pr-4 pl-3 text-gray-700 border-b border-gray-100 hover:bg-gray-50 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-gray-400 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">TV Shows</a>
+              </li>
+              <li>
+                <a href="recom_mov.html" class="block py-3 pr-4 pl-3 text-gray-700 border-b border-gray-100 hover:bg-gray-50 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-gray-400 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">Recommendations</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+    <div class="container" id="home_movies">
+      <header id="banner">
+        <div id="banner__contents">
+          <h1 id="banner__title"></h1>
+          <div id="banner__buttons">
+          <button id="banner__button" onclick="call()">Get Recommendations</button>
+        </div>
+        <p id="banner__description"></p>
+        <h1 id="movid" style="font-size: 1px;color:black"></h1>
+        </div>
+        <div id="banner__fadeBottom">
+        </div>
+      </header>
+      <div class="movie-list-container">
+        <h1 class="movie-list-title" >Netflix Originals</h1>    
+          <div class="swiper mySwiper" >
+            <div class="swiper-wrapper" id="movies_list1">
+            </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+              <div class="swiper-pagination"></div>
+          </div>
+      </div>
+      <div class="movie-list-container">
+        <h1 class="movie-list-title" >Amazon Originals</h1>    
+          <div class="swiper mySwiper" >
+            <div class="swiper-wrapper" id="movies_list_amaz">
+            </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+              <div class="swiper-pagination"></div>
+          </div>
+      </div>
+      <div class="movie-list-container">
+        <h1 class="movie-list-title" >Documentaries</h1>    
+        <div class="swiper mySwiper" >
+          <div class="swiper-wrapper" id="movies_list2">
+          </div>
+          <div class="swiper-button-next"></div>
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-pagination"></div>
+        </div>
+      </div>
+      <div class="movie-list-container">
+        <h1 class="movie-list-title" >Action</h1>    
+        <div class="swiper mySwiper" >
+          <div class="swiper-wrapper" id="movies_list5">
+          </div>
+          <div class="swiper-button-next"></div>
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-pagination"></div>
+        </div>
+      </div>
+
+
+
+          
+          <div class="movie-list-container">
+            <h1 class="movie-list-title" >Comedy</h1>    
+            <div class="swiper mySwiper" >
+              <div class="swiper-wrapper" id="movies_list3">
+              </div>
+              <div class="swiper-button-next"></div>
+              <div class="swiper-button-prev"></div>
+              <div class="swiper-pagination"></div>
+            </div>
+          </div>
+            <div class="movie-list-container">
+              <h1 class="movie-list-title" >Popular</h1>    
+              <div class="swiper mySwiper" >
+                <div class="swiper-wrapper" id="movies_list4">
+                </div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-pagination"></div>
+              </div>
+            </div>
+    </div>
+        <div class="row" id="movie-box">
+        </div>
+        <div id="card_info" ></div>
+        <div class="main_info">
+        <div id="main_card"></div>
+    </div>
+    <div class="movie-list-container">
+      <h1 class="movie-list-title" id="cast_title" ></h1>    
+      <div class="swiper mySwiper" >
+        <div class="swiper-wrapper" id="cast_disp">
+        </div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-pagination"></div>
+      </div>
+    </div>
+    <div id="recom_title"></div>
+    <div class="row" id="webrecm"></div>
+    <footer class="p-4 bg-white rounded-lg shadow md:px-6 md:py-8 dark:bg-gray-900" >
+      <div class="sm:flex sm:items-center sm:justify-between">
+          <a href="#" class="flex items-center mb-4 sm:mb-0">
+              <img src="https://png.pngtree.com/element_our/20190601/ourlarge/pngtree-white-movie-icon-image_1344876.jpg" style="height:45px;width: 45px;" class="mr-3 h-8" alt="Flowbite Logo">
+              <span class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">Recommende</span>
+          </a>
+          <ul class="flex flex-wrap items-center mb-6 text-sm text-gray-500 sm:mb-0 dark:text-gray-400">
+              <li>
+                  <a href="#" class="mr-4 hover:underline md:mr-6 ">About</a>
+              </li>
+              <li>
+                  <a href="#" class="mr-4 hover:underline md:mr-6">Privacy Policy</a>
+              </li>
+              <li>
+                  <a href="#" class="mr-4 hover:underline md:mr-6 ">Licensing</a>
+              </li>
+              <li>
+                  <a href="#" class="hover:underline">Contact</a>
+              </li>
+          </ul>
+      </div>
+      <hr class="my-6 border-gray-200 sm:mx-auto dark:border-gray-700 lg:my-8">
+      <span class="block text-sm text-gray-500 sm:text-center dark:text-gray-400">© 2022 <a href="https://flowbite.com/" class="hover:underline">Recommende™</a>. All Rights Reserved.
+      </span>
+    </footer>
+  </div>
+    <script src="js/app_srch_movies.js"></script>
+    
+    <!-- Swiper JS -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+     var swiper = new Swiper(".mySwiper", {
+        slidesPerView: 7,
+        spaceBetween: 25,
+        slidesPerGroup: 7,
+        loop: true,
+        centerSlide:true,
+        fade:true,
+        grabCursor:true,
+        loopFillGroupWithBlank: true,
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+          dynamicBullets:true,
+        },
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev"
+        },
+        breakpoints : {
+          0:{
+            slidesPerView: 1,
+            slidesPerGroup: 1,
+            loop: true,
+            grabCursor:true,
+          },
+          350:{
+            slidesPerView: 3,
+            slidesPerGroup: 3,
+            spaceBetween: 10,
+            loop: true,
+            grabCursor:true,
+          },
+          384:{
+            slidesPerView: 3,
+            slidesPerGroup: 3,
+            spaceBetween: 18,
+            loop: true,
+            grabCursor:true,
+          },
+          410:{
+            slidesPerView: 3,
+            slidesPerGroup: 3,
+            spaceBetween: 25,
+            loop: true,
+            grabCursor:true,
+          },
+          420:{
+            slidesPerView: 3,
+            slidesPerGroup: 3,
+            spaceBetween: 45,
+            loop: true,
+            grabCursor:true,
+          },
+          700:{
+            slidesPerView: 5,
+            slidesPerGroup: 5,
+            spaceBetween: 15,
+            loop: true,
+            grabCursor:true,
+          },
+          1000:{
+            slidesPerView: 6,
+            slidesPerGroup: 6,
+            loop: true,
+            grabCursor:true,
+          },
+          1300:{
+            slidesPerView: 7,
+            slidesPerGroup: 7,
+            loop: true,
+            grabCursor:true,
+          },
+        },
+      });
+
+
+    </script>
+    <script src="https://unpkg.com/flowbite@1.5.1/dist/flowbite.js"></script>
+</body>
+
+</html>
