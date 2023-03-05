@@ -103,6 +103,6 @@ app.post('/api/login', async (req, res) => {
 	res.json({ status: 'error', error: 'Invalid username/password' })
 })
 
-app.listen(9999, () => {
+app.listen(9999|process.env.PORT, () => {
 	console.log('Server up at 9999')
 })
