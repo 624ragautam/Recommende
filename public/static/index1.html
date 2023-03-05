@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://unpkg.com/flowbite@1.5.2/dist/flowbite.min.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Document</title>
+</head>
+<body>
+     
+    <section class="h-full gradient-form bg-white md:h-screen">
+        <div class="container py-12 px-6 h-full">
+          <div class="flex justify-center items-center flex-wrap h-full g-6 text-gray-800">
+            <div class="xl:w-10/12">
+              <div class="block bg-white shadow-lg rounded-lg">
+                <div class="lg:flex lg:flex-wrap g-0">
+                  <div class="lg:w-6/12 px-4 md:px-0">
+                    <div class="md:p-12 md:mx-6">
+                      <div class="text-center">
+                        <img
+                          class="mx-auto w-48"
+                          src="data:image/png;base64,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"
+                          alt="logo"
+                        />
+                        <h4 class="text-xl font-bold mt-1 mb-12 pb-1">Recommende™</h4>
+                      </div>
+                      <form>
+                        <!-- <p class="text-xl font-boldmb-6">Dont waste time watching a bad movie get the best Recommendations</p> -->
+                        <div class="mb-4">
+                          <input
+                            type="text"
+                            id="username"
+                            class="form-control block w-full px-3 py-1.5 text-base font-normal text-gray-700 bg-white bg-clip-padding border border-solid border-gray-300 rounded transition ease-in-out m-0 focus:text-gray-700 focus:bg-white focus:border-blue-600 focus:outline-none"
+                            id="exampleFormControlInput1"
+                            placeholder="Username"
+                          />
+                        </div>
+                        <div class="mb-4">
+                          <input
+                            type="password"
+                            id="password"
+                            class="form-control block w-full px-3 py-1.5 text-base font-normal text-gray-700 bg-white bg-clip-padding border border-solid border-gray-300 rounded transition ease-in-out m-0 focus:text-gray-700 focus:bg-white focus:border-blue-600 focus:outline-none"
+                            id="exampleFormControlInput1"
+                            placeholder="Password"
+                          />
+                        </div>
+                        <div class="text-center pt-1 mb-12 pb-1">
+                          <button
+                            class="inline-block px-6 py-2.5 text-white font-medium text-xs leading-tight uppercase rounded shadow-md hover:bg-blue-700 hover:shadow-lg focus:shadow-lg focus:outline-none focus:ring-0 active:shadow-lg transition duration-150 ease-in-out w-full mb-3"
+                            type="button"
+                            id="login"
+                            data-mdb-ripple="true"
+                            data-mdb-ripple-color="light"
+                            style="
+                              background: linear-gradient(
+                                to right,
+                                #ee7724,
+                                #d8363a,
+                                #dd3675,
+                                #b44593
+                              );
+                            ">
+                            Log in
+                          </button>
+                          <a class="text-gray-500" href="change-password.html">Forgot password?</a>
+                        </div>
+                        <div class="flex items-center justify-between pb-6">
+                          <p class="mb-0 mr-2">Don't have an account?</p>
+                          <a href="login.html"><button
+                            type="button"
+                            class="inline-block px-6 py-2 border-2 border-red-600 text-red-600 font-medium text-xs leading-tight uppercase rounded hover:bg-black hover:bg-opacity-5 focus:outline-none focus:ring-0 transition duration-150 ease-in-out"
+                            data-mdb-ripple="true"
+                            data-mdb-ripple-color="light">
+                            SignUp
+                          </button>
+                        </a>
+                        </div>
+                      </form>
+                    </div>
+                  </div>
+                  <div
+                    class="lg:w-6/12 flex items-center lg:rounded-r-lg rounded-b-lg lg:rounded-bl-none"
+                    style="
+                      background: linear-gradient(to right, #ee7724, #d8363a, #dd3675, #b44593);
+                    "
+                  >
+                    <div class="text-white px-4 py-6 md:p-12 md:mx-6">
+                      <h4 class="text-xl font-semibold mb-6">People never forget two things, 
+                        their first love and the money they wasted watching a bad movie , so get the best recommendations!</h4>
+                      <p class="text-sm">
+                        It's  ML-based approach to filtering or predicting the user's film preferences based on their  
+                        choices and behavior..You also get to know the latest streaming 
+                        tv shows and movies on netflix,amazon... 
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <script>
+        const form = document.getElementById('login')
+        form.addEventListener('submit', login)
+  
+        async function login(event) {
+          event.preventDefault()
+          const username = document.getElementById('username').value
+          const password = document.getElementById('password').value
+  
+          const result = await fetch('/api/login', {
+            method: 'POST',
+            headers: {
+              'Content-Type': 'application/json'
+            },
+            body: JSON.stringify({
+              username,
+              password
+            })
+          }).then((res) => res.json())
+  
+          if (result.status === 'ok') {
+            // everythign went fine
+            console.log('Got the token: ', result.data)
+            localStorage.setItem('token', result.data)
+            location.href="srch_movies.html"
+          } else {
+            alert(result.error)
+          }
+        }
+      </script>
+    <script src="https://unpkg.com/flowbite@1.5.2/dist/flowbite.js"></script>
+</body>
+</html>

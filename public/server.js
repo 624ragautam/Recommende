@@ -65,7 +65,6 @@ app.post('/api/register', async (req, res) => {
 	}
 	const password = await bcrypt.hash(plainTextPassword, 10)
 	try {
-		// let like1=Math.random()*10000;
 		const response = await User.create({
 			username,
 			password,
@@ -73,7 +72,6 @@ app.post('/api/register', async (req, res) => {
 		})
 		console.log('User created successfully: ', response)
 	} catch (error) {
-		console.log(error);
 		if (error.code === 11000) {
 			// duplicate key
 			return res.json({ status: 'error', error: 'Username already in use' })
